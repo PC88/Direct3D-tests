@@ -1,6 +1,9 @@
 #include "iostream"
 #include "windows.h"
 
+
+
+
 int CALLBACK WinMain(HINSTANCE hInst, HINSTANCE hPrevInst, LPSTR lpCmdLine, int nCmdShow)
 {
 	const auto pClassName = "InitialClass3D";
@@ -32,5 +35,6 @@ int CALLBACK WinMain(HINSTANCE hInst, HINSTANCE hPrevInst, LPSTR lpCmdLine, int 
 	{
 		std::cin.get();
 	}
+
 	return 0;
 }

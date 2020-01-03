@@ -76,6 +76,7 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)Vendor\imgui-1.74\imgui-1.74;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -94,6 +95,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)Vendor\imgui-1.74\imgui-1.74;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
@@ -116,6 +118,22 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Application.cpp" />
+    <ClCompile Include="Demos\Demo.cpp" />
+    <ClCompile Include="Demos\DemoManager.cpp" />
+    <ClCompile Include="Vendor\imgui-1.74\imgui-1.74\imgui.cpp" />
+    <ClCompile Include="Vendor\imgui-1.74\imgui-1.74\imgui_demo.cpp" />
+    <ClCompile Include="Vendor\imgui-1.74\imgui-1.74\imgui_draw.cpp" />
+    <ClCompile Include="Vendor\imgui-1.74\imgui-1.74\imgui_widgets.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Demos\Demo.h" />
+    <ClInclude Include="Demos\DemoManager.h" />
+    <ClInclude Include="Vendor\imgui-1.74\imgui-1.74\imconfig.h" />
+    <ClInclude Include="Vendor\imgui-1.74\imgui-1.74\imgui.h" />
+    <ClInclude Include="Vendor\imgui-1.74\imgui-1.74\imgui_internal.h" />
+    <ClInclude Include="Vendor\imgui-1.74\imgui-1.74\imstb_rectpack.h" />
+    <ClInclude Include="Vendor\imgui-1.74\imgui-1.74\imstb_textedit.h" />
+    <ClInclude Include="Vendor\imgui-1.74\imgui-1.74\imstb_truetype.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
