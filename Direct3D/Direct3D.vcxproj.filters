@@ -36,6 +36,9 @@
     <ClCompile Include="Vendor\imgui-1.74\imgui-1.74\imgui_demo.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Demos\D3D12Demo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Demos\DemoManager.h">
@@ -60,6 +63,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Vendor\imgui-1.74\imgui-1.74\imconfig.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Demos\D3D12Demo.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
